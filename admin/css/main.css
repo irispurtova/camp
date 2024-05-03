@@ -1,0 +1,52 @@
+body {
+    background-color: #f3f6fb;
+}
+
+.head {
+    width: 100%;
+    background-color: white;
+}
+
+.admin-header {
+    max-width: 1080px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.head .admin-header .bye a {
+    transition: color 0.3s ease;
+    color: black;
+}
+
+.head .admin-header .bye a:hover {
+    color: #df8d41;
+}
+
+.table-action .container {
+    max-width: 1080px;
+    padding: 20px 0;
+    display: flex;
+}
+
+.table-action .container .block-action {
+    width: 230px;
+    height: 70px;
+    box-shadow: 0 2px 30px rgba(176, 176, 176, .25);
+    background-color: white;
+    border-radius: 5px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.table-action .container .block-action a {
+    color: black;
+    transition: color 0.3s ease;
+    transition: font-size 0.3s ease;
+}
+
+.table-action .container .block-action a:hover {
+    color: #1950a0;
+    font-size: 18px;
+}

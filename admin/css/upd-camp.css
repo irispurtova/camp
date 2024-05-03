@@ -1,0 +1,168 @@
+body {
+    background-color: #f3f6fb;
+}
+
+.head {
+    width: 100%;
+    background-color: white;
+}
+
+.admin-header {
+    max-width: 1080px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.head .admin-header .bye a {
+    transition: color 0.3s ease;
+    color: black;
+}
+
+.head .admin-header .bye a:hover {
+    color: #df8d41;
+}
+
+.table-camp .container {
+    max-width: 1080px;
+    padding-top: 20px;
+}
+
+.table-camp .container .bread-crumbs {
+    padding-bottom: 10px;
+}
+
+.table-camp .container .bread-crumbs a {
+    color: #585858;
+    transition: color 0.3s ease;
+}
+
+.table-camp .container .bread-crumbs a:hover {
+    color: #df8d41;
+}
+
+.tbl {
+    margin-left: 0px;
+}
+
+.tbl td {
+    padding-bottom: 10px;
+    margin-right: 20px;
+}
+
+.tbl tr td:first-child {
+    width: 180px;
+}
+
+input[type="submit"] {
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #df8d41;
+    max-width: max-content;
+    margin-left: 0px;
+    color: white;
+    border: none;
+    margin: 20px 0px;
+    cursor: pointer;
+}
+
+input[type="text"], input[type="number"], textarea {
+    width: 400px;
+    padding: 6px 10px;
+    font-size: 14px;
+}
+
+input[type="date"] {
+    font-size: 14px;
+}
+
+textarea {
+    resize: none;
+}
+
+#imageInput {
+    display: none; /* Скрыть стандартный input */
+}
+
+#customButton {
+    background-color: #1950a0;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.imageWrapper {
+    margin: 5px 10px 5px 0px;
+    position: relative;
+}
+
+.imageWrapper img {
+    width: 100px;
+    height: 70px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.deleteButton {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 0 5px;
+    border-radius: 50%;
+}
+
+.tbl img {
+    width: 100px;
+    height: 70px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.age-inputs {
+    display: flex;
+    align-items: center;
+}
+
+.age-inputs input {
+    margin-right: 10px; 
+    width: 20%;
+    margin-left: 0px;
+}
+
+#upd {
+    display: flex;
+    flex-direction: row;
+}
+
+.photo {
+    padding: 0px 8px;
+}
+
+#photos {
+    padding-bottom: 10px;
+}
+
+#imageContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 450px;
+}
+
+.back {
+    color: black;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+
+#season_table input {
+    width: 216px;
+}

@@ -1,0 +1,142 @@
+body {
+    background-color: #f3f6fb;
+}
+
+.head {
+    width: 100%;
+    background-color: white;
+}
+
+.admin-header {
+    max-width: 1080px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.head .admin-header .bye a {
+    transition: color 0.3s ease;
+    color: black;
+}
+
+.head .admin-header .bye a:hover {
+    color: #df8d41;
+}
+
+.table-camp .container {
+    max-width: 1080px;
+}
+
+.table-camp .container .button-add {
+    padding: 6px 14px;
+    border-radius: 5px;
+    background-color: #df8d41;
+    max-width: max-content;
+    margin-left: 0px;
+    color: white;
+}
+
+.table-camp .container .bread-crumbs {
+    padding-bottom: 10px;
+}
+
+.table-camp .container .bread-crumbs a {
+    color: #585858;
+    transition: color 0.3s ease;
+}
+
+.table-camp .container .bread-crumbs a:hover {
+    color: #df8d41;
+}
+
+.table-camp {
+    max-width: 1080px;
+    padding: 30px 0;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #1950a0;
+    background-color: white;
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 20px;
+}
+
+table th {
+    padding: 5px;
+    background: #efefef;
+    border: 1px solid #1950a0;
+}
+
+table td {
+    border: 1px solid #1950a0;
+    padding: 5px;
+}
+
+table a {
+    color: black;
+}
+
+table a:hover {
+    opacity: 0.8;
+}
+
+#campNameSearch {
+    margin-bottom: 10px;
+    padding: 6px 10px;
+    width: 300px;
+    font-size: 14px;
+}
+
+button {
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+    outline: none;
+}
+
+.price-col {
+    width: 15%;
+}
+
+.name-col, .type-col {
+    width: 33%;
+}
+
+#searchForm {
+    margin-bottom: 20px;
+}
+
+#searchForm label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+#searchButton, #resetButton {
+    padding: 8px;
+    cursor: pointer;
+    background-color: #1950a0;
+    border-radius: 4px;
+    color: white;
+}
+
+#searchButton:hover, #resetButton:hover {
+    opacity: 0.8;
+}
+
+.razdel {
+    display: flex;
+    flex-direction: row;
+}
+
+.razdel .right {
+    width: 70%;
+    margin-left: 20px;
+}
+
+#searchTerm {
+    width: calc(100% - 20px);
+    margin-bottom: 20px;
+}

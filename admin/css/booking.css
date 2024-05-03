@@ -1,0 +1,85 @@
+body {
+    background-color: #f3f6fb;
+}
+
+.head {
+    width: 100%;
+    background-color: white;
+}
+
+.admin-header {
+    max-width: 1080px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.head .admin-header .bye a {
+    transition: color 0.3s ease;
+    color: black;
+}
+
+.head .admin-header .bye a:hover {
+    color: #df8d41;
+}
+
+.table-camp .container {
+    max-width: 1080px;
+    padding-top: 20px;
+}
+
+.table-camp .container .bread-crumbs {
+    padding-bottom: 10px;
+}
+
+.table-camp .container .bread-crumbs a {
+    color: #585858;
+    transition: color 0.3s ease;
+}
+
+.table-camp .container .bread-crumbs a:hover {
+    color: #df8d41;
+}
+
+.table-camp {
+    max-width: 1080px;
+    padding: 30px 0;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #1950a0;
+    background-color: white;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table th {
+    padding: 5px;
+    background: #efefef;
+    border: 1px solid #1950a0;
+}
+
+table td {
+    border: 1px solid #1950a0;
+    padding: 5px;
+}
+
+input[type="search"] {
+    margin-bottom: 10px;
+    padding: 6px 10px;
+    width: 300px;
+}
+
+.show-all {
+    margin-bottom: 10px;
+}
+
+.show-all a {
+    color: black;
+}
+
+.show-all a:hover {
+    opacity: 0.8;
+}

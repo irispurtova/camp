@@ -1,0 +1,22 @@
+.add-category {
+    padding: 6px 14px;
+    border-radius: 5px;
+    background-color: #df8d41;
+    max-width: max-content;
+    margin-left: 0px;
+    color: white;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #df8d41;
+    max-width: max-content;
+    margin-left: 0px;
+    color: white;
+    border: none;
+    margin: 20px 0px;
+    cursor: pointer;
+}

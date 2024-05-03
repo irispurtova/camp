@@ -1,0 +1,125 @@
+body {
+    background-color: #f3f6fb;
+}
+
+.feedback {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback .comment {
+    box-shadow: 0 2px 30px rgba(176, 176, 176, .25);
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    width: 670px;
+    margin-right: 0px;
+}
+
+.feedback .comment .user-camp {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.feedback .comment .user-camp .del {
+    margin-right: 0px;
+}
+
+.feedback .comment .user-camp .ph,
+.name,
+.camp {
+    margin: 0px;
+    margin-left: 10px;
+}
+
+.feedback .comment .text {
+    font-size: 14px;
+    padding-top: 20px;
+}
+
+.feedback .comment .rep {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    align-items: center;
+}
+
+.feedback .comment .rep .stars,
+.evaluation {
+    margin-left: 0px;
+    font-size: 14px;
+}
+
+.table-camp .container {
+    max-width: 1080px;
+}
+
+.head {
+    width: 100%;
+    background-color: white;
+}
+
+.admin-header {
+    max-width: 1080px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.head .admin-header .bye a {
+    transition: color 0.3s ease;
+    color: black;
+}
+
+.head .admin-header .bye a:hover {
+    color: #df8d41;
+}
+
+.table-camp .container {
+    max-width: 1080px;
+}
+
+.table-camp .container .bread-crumbs {
+    padding-bottom: 10px;
+}
+
+.table-camp .container .bread-crumbs a {
+    color: #585858;
+    transition: color 0.3s ease;
+}
+
+.table-camp .container .bread-crumbs a:hover {
+    color: #df8d41;
+}
+
+.table-camp {
+    max-width: 1080px;
+    padding: 30px 0;
+}
+
+ul {
+    list-style-type: none;
+    padding-top: 30px;
+}
+
+.full {
+    display: flex;
+    flex-direction: row;
+}
+
+.full .filter-feedback {
+    margin-left: 0px;
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+select {
+    font-size: 20px; 
+    width: 300px; 
+}
+
+select option {
+    font-size: 18px;
+}
