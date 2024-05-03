@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'fixel';
+    src: url('../fonts/FixelText-Medium.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0 auto;
+    padding: 0px;
+    outline: none;
+    font-family: 'fixel';
+}
+
+a {
+    text-decoration: none;
+}
+
+.camp-header {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    max-width: 1080px;
+    padding: 7px 0px;
+}
+
+.logo {
+    margin-left: 15px;
+}
+
+.camp-header ul {
+    list-style-type: none;
+}
+
+.camp-header ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.camp-header ul li a {
+    text-decoration: none;
+    color: #585858;
+    transition: color 0.3s ease;
+}
+
+.camp-header ul li a:hover {
+    color: #df8d41;
+}
+
+/* icons */
+.icons {
+    display: flex;
+    flex-direction: row;
+    margin-right: 15px;
+}
+
+.icon {
+    margin-left: 5px;
+}
+
+.icon img {
+    width: 36px;
+    height: 36px;
+}

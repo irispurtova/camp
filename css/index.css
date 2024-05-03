@@ -1,0 +1,338 @@
+/* banner */
+.banner {
+    height: 500px;
+    background: linear-gradient(90deg, rgba(0, 46, 113, .86) 0, rgba(0, 46, 113, .86) 100%), url('../images/banner.jpg') center center/cover no-repeat;
+}
+
+.banner .container {
+    height: 500px;
+    max-width: 1110px;
+}
+
+.banner .container h1 {
+    color: white;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.banner-info {
+    padding: 120px 15px 25px 15px;
+}
+
+.banner-info p {
+    margin-bottom: 20px;
+}
+
+.yellow {
+    color: #df8d41;
+    font-size: 20px;
+}
+
+.white {
+    color: white;
+    font-size: 20px;
+}
+
+.search {
+    width: 100%;
+    flex-direction: row;
+}
+
+.dropdowns {
+    float: left;
+}
+
+.dropdowns_element {
+    height: 60px;
+    font-size: 16px;
+    padding: 0pc 50px 0px 15px;
+    border: 0;
+    appearance: none;
+    color: #585858;
+    background: white url('../images/select-arrow.svg') no-repeat center;
+    background-position-x: calc(100% - 20px);
+}
+
+.dropdowns_element:hover {
+    background-color: #dce5f1;
+}
+
+#select_county {
+    width: 180px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+#select_region {
+    width: 220px;
+    border-left: 1px solid #dce5f1;
+}
+
+#select_type {
+    width: 220px;
+    border-left: 1px solid #dce5f1;
+}
+
+#select_sezon {
+    width: 180px;
+    border-left: 1px solid #dce5f1;
+    border-radius: 0px 5px 5px 0px;
+}
+
+option {
+    background-color: white;
+}
+
+.found {
+    font-size: 24px;
+    width: 154px;
+    height: 60px;
+    color: #fff;
+    font-weight: 700;
+    background: #df8d41;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 36px;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+}
+
+/* категории */
+.categories {
+    padding: 25px 0px;
+    background-color: #f3f6fb;
+}
+
+.categories .container {
+    max-width: 1110px;
+    padding: 0px 15px;
+}
+
+.categories .container .text-cat {
+    padding-left: 15px;
+}
+
+.categories .container h2 {
+    color: #3a3a3a;
+    font-size: 32px;
+    margin: 0px 0px 7px;
+}
+
+.categories-list {
+    margin: 23px 0 40px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+}
+
+.categories-list .categories-list-popular {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: -30px;
+    height: 420px;
+    width: calc((100% - 30px)/ 2);
+}
+
+.categories-list-popular .small {
+    width: calc((100% - 30px)/ 2);
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.categories-list-popular .hide {
+    width: calc(100% - 15px);
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.block {
+    width: 100%;
+    height: 100%;
+    font-size: 22px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.cat_plus {
+    color: #3a3a3a;
+    margin-left: 15px;
+    opacity: 0.75;
+}
+
+.cat_plus:hover {
+    opacity: 1;
+}
+
+/* большой текст */
+.description {
+    background-color: #f3f6fb;
+}
+
+.description .container {
+    max-width: 1080px;
+    border-top: #eeeeee 1px solid;
+    border-bottom: #eeeeee 1px solid;
+    padding-bottom: 30px;
+}
+
+.description img {
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+.description .container h2 {
+    margin-bottom: 20px;
+    margin-top: 50px;
+    font-size: 32px;
+    line-height: 32px;
+    color: #1950a0;
+    font-weight: 500;
+}
+
+.info-texts-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-texts-block .right .likes {
+    color: #1950a0;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.info-texts-block .left p {
+    margin-bottom: 30px;
+}
+
+.info-texts-block .left, .right {
+    width: calc((100% - 40px)/ 2);
+    margin: 0px;
+    padding: 0px;
+}
+
+/* блок с текстом лучшее место */
+.best_place_text {
+    background-color: #f3f6fb;
+}
+
+.best_place_text .container {
+    max-width: 1080px;
+    border-bottom: #eeeeee 1px solid;
+}
+
+.best_place_text .container h2 {
+    margin-bottom: 20px;
+    padding-top: 50px;
+    font-size: 32px;
+    line-height: 32px;
+    color: #1950a0;
+    font-weight: 500;
+}
+
+.best_place_text img {
+    vertical-align: middle;
+}
+
+.best_place_text .info-texts-block .likes {
+    padding-bottom: 20px;
+    line-height: 22px;
+}
+
+.best_place_text .info-texts-block .button {
+    width: 150px;
+    height: 40px;
+    background-color: #df8d41;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.best_place_text .info-texts-block .button:hover {
+    cursor: pointer;
+}
+
+/* отзывы */
+.feedback {
+    padding-top: 30px;
+    background-color: #f3f6fb;
+    padding-bottom: 30px;
+}
+
+.feedback .container {
+    max-width: 1080px;
+}
+
+.fb-blocks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fb-blocks .block {
+    display: flex;
+    background: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 30px 0;
+    min-height: 250px;
+    max-width: 320px;
+    color: black;
+}
+
+.fb-blocks .block .block-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    font-size: 18px;
+}
+
+.fb-blocks .block .block-top .title-camp {
+    margin-left: 0px;
+    width: 264px;
+}
+
+.fb-blocks .block .block-top .title-camp a {
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.fb-blocks .block .block-top .title-camp a:hover {
+    color: #df8d41;
+}
+
+.fb-blocks .block .block-top .evaluation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 56px;
+    width: 56px;
+    text-align: center;
+    background-color: #299517;
+    border-radius: 5px;
+    color: white;
+    margin-right: 0px;
+}
+
+.fb-blocks .block .text {
+    font-size: 12px;
+}
+
+.fb-blocks .block .block-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    font-size: 14px;
+}
+
+.fb-blocks .block .block-bottom .user {
+    margin-left: 0px;
+}

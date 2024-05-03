@@ -1,0 +1,433 @@
+.inner .container {
+    max-width: 1080px;
+    padding-top: 10px;
+}
+
+.cat {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0;
+    flex-wrap: wrap;
+}
+
+.cat .cat-block {
+    padding: 5px 10px;
+    font-size: 12px;
+    box-shadow: 0 0 4px rgba(168, 80, 60, .25);
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 0px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.inner .container .card-info {
+    display: flex;
+    flex-direction: row;
+}
+
+.inner .container .card-info .left {
+    width: 710px;
+}
+
+.inner .container .card-info .right {
+    width: calc(100% - 730px);
+    box-shadow: 0 2px 30px rgba(176, 176, 176, .25);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    height: 306px;
+    justify-content: space-between;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    height: 306px;
+}
+
+.the-main-photo {
+    width: 504px;
+    height: 306px;
+    border-radius: 5px;
+}
+
+.block-photos {
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    height: 320px;
+    /* Задайте высоту блока */
+    overflow: hidden;
+    /* Скрыть содержимое, выходящее за пределы блока */
+}
+
+.zoomable {
+    width: 94px;
+    height: 72px;
+    border-radius: 5px;
+
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+.zoomable img {
+    width: 94px;
+    height: 72px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.image-counter {
+    position: absolute;
+    right: 10px;
+    color: white;
+}
+
+.remaining-images {
+    background-image: none;
+    border: 3px solid #dce5f1;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    color: #1950a0;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    width: 88px;
+    height: 66px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.characteristics {
+    margin-left: 0px;
+    padding-top: 30px;
+}
+
+.modal-gallery .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-gallery .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0px;
+    max-height: 608px;
+    border-radius: 5px;
+}
+
+.modal-gallery .close {
+    position: absolute;
+    top: -30px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.modal-gallery #zoomedImage {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    max-height: 608px;
+}
+
+.modal-gallery .arrow-button {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.modal-gallery .left-arrow {
+    left: -40px;
+    padding: 5px;
+    background-color: #dce5f1;
+}
+
+.modal-gallery .right-arrow {
+    padding: 5px;
+    right: -40px;
+    background-color: #dce5f1;
+}
+
+.modal-gallery .arrow-button:focus {
+    outline: none;
+}
+
+.styled-select {
+    display: inline-block;
+    font-size: 13px;
+    border: 1px solid #1950a0;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    width: 296px;
+    background: white url(../images/select-arrow.svg) no-repeat center;
+    background-position-x: calc(100% - 20px);
+    margin: 20px;
+}
+
+.styled-select .title {
+    color: #1950a0;
+    font-size: 10px;
+}
+
+/* Стили для выпадающего меню */
+.styled-select .options-container {
+    position: absolute;
+    display: none;
+    margin-top: 6px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    z-index: 1;
+    margin-left: -1px;
+}
+
+/* Стили для опций в выпадающем меню */
+.styled-select .options-container div {
+    padding: 8px;
+    width: 280px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.styled-select .options-container div:hover {
+    color: #df8d41;
+}
+
+#price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px;
+}
+
+#price .top {
+    font-size: 24px;
+    color: #df8d41;
+    line-height: 0.8em;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.booking {
+    color: white;
+    background-color: #df8d41;
+    width: 308px;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin: 20px;
+    bottom: 0px;
+    cursor: pointer;
+}
+
+.text {
+    margin: 0px 30px;
+    padding-top: 30px;
+}
+
+.text>* {
+    padding-top: 10px;
+}
+
+/* стили модального окна */
+.modal-okno {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+}
+
+.modal-okno-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f3f6fb;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.product-card {
+    text-align: center;
+}
+
+.modal-okno-in {
+    width: 280px;
+    padding: 15px;
+    margin: 15px 0;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.modal-okno-in .title {
+    font-size: 10px;
+    color: #1950a0;
+    margin-top: -8px;
+}
+
+.modal-okno input {
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.modal-okno button[type="submit"] {
+    color: white;
+    background-color: #df8d41;
+    width: 242px;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 20px;
+    border: 0;
+    cursor: pointer;
+}
+
+/* стили модального окна */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    z-index: 100;
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f3f6fb;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+#modalContent h2 {
+    max-width: 310px;
+    padding-bottom: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.product-card {
+    text-align: center;
+}
+
+.modal-in {
+    width: 280px;
+    padding: 15px;
+    padding-bottom: 10px;
+    margin: 15px 0;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.modal-in .title {
+    font-size: 10px;
+    color: #1950a0;
+    margin-top: -8px;
+}
+
+.modal input {
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.modal button[type="submit"] {
+    color: white;
+    background-color: #df8d41;
+    width: 242px;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 20px;
+    border: 0;
+    cursor: pointer;
+}
+
+.modal-content .booking {
+    color: white;
+    background-color: #df8d41;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    margin: auto;
+}
+
+.button-add-feedback {
+    color: #1950a0;
+    background-color: #f3f6fb;
+    width: 308px;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1px 1px #bdc8d7;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#heart {
+    cursor: pointer;
+    padding: 10px;
+}

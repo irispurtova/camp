@@ -1,0 +1,525 @@
+.lagerya {
+    background-color: #f3f6fb;
+}
+
+.lagerya .container {
+    max-width: 1080px;
+    padding: 30px 0;
+}
+
+.lagerya .container .text {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 20px;
+}
+
+.lagerya .container .text .title {
+    font-size: 32px;
+    letter-spacing: .05em;
+    margin-left: 0px;
+}
+
+.lagerya .container .camps {
+    display: flex;
+    padding-top: 30px;
+}
+
+.lagerya .container .camps .left {
+    width: 276px;
+}
+
+.lagerya .container .camps .left .dropdown {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    cursor: pointer;
+    width: 242px;
+    height: 50px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: white;
+    margin-left: 0px;
+}
+
+.lagerya .container .camps .left .dropdown .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    top: 100%;
+    max-height: 250px;
+    overflow-y: auto;
+    /* margin-top: 200px; */
+    z-index: 1;
+    margin-left: -1px;
+}
+
+.lagerya .container .camps .left .dropdown .dropdown-menu a {
+    display: flex;
+    align-items: center;
+    width: 232px;
+    height: 50px;
+    font-size: 14px;
+    color: #585858;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.lagerya .container .camps .left .dropdown .dropdown-menu a:hover {
+    color: #df8d41;
+}
+
+.lagerya .container .camps .left .dropdown .selected-value {
+    font-size: 14px;
+    color: #585858;
+    margin-left: 10px;
+}
+
+.lagerya .container .camps .left .dropdown .title {
+    color: #1950a0;
+    font-size: 10px;
+    margin-left: 10px;
+}
+
+.lagerya .container .camps .right {
+    width: calc(100% - 276px);
+}
+
+.lagerya .container .camps .cards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.lagerya .container .camps .right .filter-wrap {
+    font-size: 13px;
+    text-align: end;
+}
+
+.lagerya .container .camps .right .filter-wrap a {
+    color: black;
+}
+
+.lagerya .container .camps .right .filter-wrap a:hover {
+    opacity: 0.9;
+}
+
+.lagerya .container .camps .right .card-camp {
+    padding: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 2px 30px rgba(176, 176, 176, .25);
+    border-radius: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.lagerya .container .camps .right .card-camp .middle-card-camp {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 30px;
+    margin: 0px;
+}
+
+.lagerya .container .camps .right .card-camp .middle-card-camp .description {
+    width: calc(100% - 200px);
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.lagerya .container .camps .right .card-camp .middle-card-camp .description .head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.lagerya .container .camps .right .card-camp .middle-card-camp .description .head .title {
+    font-size: 20px;
+    margin-left: 0px;
+    color: #404040;
+}
+
+.lagerya .container .camps .right .card-camp .middle-card-camp .description .head .feedback {
+    font-size: 14px;
+    color: #727272;
+    margin-right: 0px;
+}
+
+.lagerya .container .camps .right .card-camp .middle-card-camp .description .head .feedback a {
+    color: #727272;
+}
+
+.lagerya .container .camps .right .card-camp .middle-card-camp .description .head .ev {
+    margin-right: 0px;
+    width: 36px;
+    height: 36px;
+    border-radius: 5px;
+    background-color: #299517;
+    margin-left: 10px;
+    color: white;
+    top: 50%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.lagerya .container .camps .right .card-camp .middle-card-camp .description .desc {
+    font-size: 16px;
+}
+
+.lagerya .container .camps .right .card-camp .middle-card-camp .description .place {
+    color: #404040;
+}
+
+.lagerya .container .camps .right .card-camp .middle-card-camp .description .cat {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0;
+    flex-wrap: wrap;
+}
+
+.lagerya .container .camps .right .card-camp .middle-card-camp .description .cat .cat-block {
+    padding: 5px 10px;
+    font-size: 12px;
+    border: 1px solid #dce5f1;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 0px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.lagerya .container .camps .right .card-camp .middle-card-camp .description .cat .cat-block:hover {
+    border: 1px solid #1950a0;
+    color: #1950a0;
+}
+
+.lagerya .container .camps .right .card-camp .bottom-card-camp {
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    border-top: 1px solid #dce5f1;
+    margin: 0px;
+}
+
+.styled-select {
+    position: relative;
+    display: inline-block;
+    font-size: 13px;
+    border: 1px solid #1950a0;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    width: 270px;
+    background: white url(../images/select-arrow.svg) no-repeat center;
+    background-position-x: calc(100% - 20px);
+}
+
+.styled-select .title {
+    color: #1950a0;
+    font-size: 10px;
+}
+
+/* Стили для выпадающего меню */
+.styled-select .options-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    width: 100%;
+    z-index: 1;
+    margin-left: -1px;
+}
+
+/* Стили для опций в выпадающем меню */
+.styled-select .options-container div {
+    padding: 8px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.styled-select .options-container div:hover {
+    color: #df8d41;
+}
+
+#price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px;
+}
+
+#price .top {
+    font-size: 24px;
+    color: #df8d41;
+    line-height: 0.8em;
+    font-weight: bold;
+}
+
+.lagerya .container .camps .right .card-camp .bottom-card-camp .learn-more {
+    color: #1950a0;
+    background-color: #f3f6fb;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1px 1px #bdc8d7;
+    font-weight: bold;
+}
+
+.lagerya .container .camps .right .card-camp .bottom-card-camp .booking {
+    color: white;
+    background-color: #df8d41;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="search"] {
+    border: none;
+    margin-top: 5px;
+    width: 222px;
+    margin-left: 10px;
+    font-size: 14px;
+    font-family: 'fixel';
+    color: #585858;
+}
+
+.wrapper {
+    position: relative;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.wrapper .container {
+    position: relative;
+    width: 94%;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    outline: none;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    background-color: transparent;
+    pointer-events: none;
+}
+
+.slider-track {
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    background-color: #df8d41;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    height: 2px;
+}
+
+input[type="range"]::-moz-range-track {
+    -moz-appearance: none;
+    height: 2px;
+}
+
+input[type="range"]::-ms-track {
+    appearance: none;
+    height: 2px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 10px;
+    width: 10px;
+    background-color: #ffffff;
+    border: 1px solid #727272;
+    margin-top: -4px;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+input[type="range"]::-moz-range-thumb {
+    -webkit-appearance: none;
+    height: 10px;
+    width: 10px;
+    cursor: pointer;
+    background-color: #ffffff;
+    border: 1px solid #727272;
+    pointer-events: auto;
+}
+
+input[type="range"]::-ms-thumb {
+    appearance: none;
+    height: 10px;
+    width: 10px;
+    cursor: pointer;
+    background-color: #df8d41;
+    pointer-events: auto;
+}
+
+input[type="range"]:active::-webkit-slider-thumb {
+    background-color: #ffffff;
+    border: 1px solid #727272;
+}
+
+.values {
+    display: flex;
+    flex-direction: row;
+}
+
+.min {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.max {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.lagerya .container .camps .left .booking {
+    color: white;
+    background-color: #df8d41;
+    width: 242px;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-left: 0px;
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.lagerya .container .camps .left .booking a {
+    color: white;
+}
+
+/* стили модального окна */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    z-index: 100;
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f3f6fb;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+#modalContent h2 {
+    max-width: 310px;
+    padding-bottom: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.product-card {
+    text-align: center;
+}
+
+.modal-in {
+    width: 280px;
+    padding: 15px;
+    padding-bottom: 10px;
+    margin: 15px 0;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.modal-in .title {
+    font-size: 10px;
+    color: #1950a0;
+    margin-top: -8px;
+}
+
+.modal input {
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.modal button[type="submit"] {
+    color: white;
+    background-color: #df8d41;
+    width: 242px;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 20px;
+    border: 0;
+    cursor: pointer;
+}
+
+.modal-content .booking {
+    color: white;
+    background-color: #df8d41;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+}
+
+.sortirovka {
+    cursor: pointer;
+}
+
+#heart {
+    cursor: pointer;
+    padding: 4px;
+}
